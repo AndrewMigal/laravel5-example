@@ -1,0 +1,4 @@
+.solano*
+.env
+vendor/
+composer.lock

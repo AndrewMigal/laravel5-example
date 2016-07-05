@@ -1,5 +1,10 @@
 <?php
 
+// Fix for max_nesting_level limit with xdebug
+// See https://laracasts.com/discuss/channels/general-discussion/l5-maximum-function-nesting-level-of-100-reached-aborting
+// and http://stackoverflow.com/questions/30803342/maximum-function-nesting-level-of-100-reached-aborting-after-upgrading-to-lar
+ini_set('xdebug.max_nesting_level', 150);
+
 define('LARAVEL_START', microtime(true));
 
 /*
