@@ -34,4 +34,9 @@ tests:
     command: vendor/bin/solano-phpunit
     files:
       - tests/**Test.php
+plan:
+  - default
+profiles:
+  default:
+    tests:
       - tests/**/*Test.php
