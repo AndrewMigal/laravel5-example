@@ -31,7 +31,7 @@ plan:
 profiles:
   default:
     tests:
-      - type: phpunit
+      type: phpunit
       mode: parallel
       output: exit-status
       config: phpunit.xml
