@@ -39,4 +39,10 @@ plan:
 profiles:
   default:
     tests:
-      - tests/**/*Test.php
+      - type: phpunit
+      mode: parallel
+      output: exit-status
+      config: phpunit.xml
+      command: vendor/bin/solano-phpunit
+      files:
+        - tests/**/*Test.php
