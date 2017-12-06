@@ -26,14 +26,6 @@ cache:
     - vendor
 
 # Run PHPUnit tests in parallel (requires adding "solano/solano-phpunit": "*" to "require-dev" in composer.json)
-tests:
-  - type: phpunit
-    mode: parallel
-    output: exit-status
-    config: phpunit.xml
-    command: vendor/bin/solano-phpunit
-    files:
-      - tests/**Test.php
 plan:
   - default
 profiles:
@@ -45,4 +37,5 @@ profiles:
       config: phpunit.xml
       command: vendor/bin/solano-phpunit
       files:
+        - tests/**Test.php
         - tests/**/*Test.php
