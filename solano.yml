@@ -30,6 +30,7 @@ plan:
   - default
 profiles:
   default:
+    script: "exit 0"
     tests:
       type: phpunit
       mode: parallel
